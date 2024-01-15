@@ -1,0 +1,46 @@
+<!-- tweets/templates/tweets/home.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Combinator Twttr</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-dark-mode">
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+        <h1>Z-Combinator Bleeps</h1>
+        <p class="hellowrld">Hello, friend;</p>
+        <p>This is a suitably vague app; it is like Twitter, but it is not it, and not Y-Combinator</p>
+        {% if user.is_authenticated %}
+            <form method="post" action="{% url 'home' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="bleep-btn" type="submit">Bleep</button>
+            </form>
+        {% else %}
+            <p>Please <a href="{% url 'login' %}">login</a> to bleep.</p>
+        {% endif %}
+        {% for tweet in tweets %}
+            <div class="tweet">
+                <div class="user-info">
+                    <span class="avatar"><img src="{% static 'img/default_avatar.png' %}" alt="Avatar"></span>
+                    <span class="username">{{ tweet.user.username }}</span>
+                </div>
+                <p>{{ tweet.content }}</p>
+                <small>{{ tweet.created_at }}</small>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
