@@ -1,0 +1,86 @@
+/* tweets/static/css/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6ecf0; /* Default background color */
+    color: #14171a; /* Default text color */
+    margin: 0;
+}
+
+.dark-mode body {
+    background-color: #15202b;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dark-mode .container {
+    background-color: #0d1117;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #1da1f2;
+}
+
+p {
+    font-size: 14px;
+    color: #657786;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.bleep-btn {
+    padding: 8px 12px;
+    background-color: #4c149f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5c102e;
+}
+
+.tweet {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+
+.dark-mode .tweet {
+    background-color: #0d1117;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1da1f2;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
