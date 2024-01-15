@@ -1,6 +1,6 @@
 # Z-Combinator Twttr
 
-Z-Combinator Twttr is a Django app for __`typing out thoughts`__. Authenticated users can post short messages (bleeps).
+> Z-Combinator Twttr is a Django app for __`typing out thoughts`__. Authenticated users can post short messages (bleeps).
 
 ## Setup
 
@@ -37,14 +37,13 @@ Z-Combinator Twttr is a Django app for __`typing out thoughts`__. Authenticated 
    python manage.py runserver
    ```
 
-6. **Access the Application:**  
-   Open your web browser and go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to view the Z-Combinator Twttr app.
+6. **Access the Application:** Open your web browser and go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to view the Z-Combinator Twttr app.
 
 <p align="center">
   <img align="center" src="./tweets/static/img/bleeps_index.png" height="320" width="480"/>
 </p>
 
-## Features
+## How It Works
 
 - User registration and authentication
 - Posting and viewing short messages (bleeps) - LIKE tweets
