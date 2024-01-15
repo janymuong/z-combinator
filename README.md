@@ -1,6 +1,6 @@
 # Z-Combinator Twttr
 
-Z-Combinator Twttr is a Django-based app for __`typing out thoughts`__. Authenticated users can post short messages (bleeps).
+Z-Combinator Twttr is a Django app for __`typing out thoughts`__. Authenticated users can post short messages (bleeps).
 
 ## Setup
 
@@ -18,11 +18,12 @@ Z-Combinator Twttr is a Django-based app for __`typing out thoughts`__. Authenti
 3. **Set up Environment Variables:**
    Create a `.env` file in the project root with the content:
    ```env
-   DB_NAME=mydatabase
-   DB_USER=myuser
-   DB_PASSWORD=mypassword
+   DB_NAME=twttr_bleeps
+   DB_USER=db_user # valid user
+   DB_PASSWORD=password-not-serious
    DB_HOST=localhost
    DB_PORT=5432
+   SECRET_KEY=django-insecure#somes_lengthy_tring
    ```
 
 4. **Apply Migrations:**
@@ -36,13 +37,17 @@ Z-Combinator Twttr is a Django-based app for __`typing out thoughts`__. Authenti
    python manage.py runserver
    ```
 
-6. **Access the Application:**
+6. **Access the Application:**  
    Open your web browser and go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to view the Z-Combinator Twttr app.
+
+<p align="center">
+  <img align="center" src="./tweets/static/img/bleeps_index.png" height="320" width="480"/>
+</p>
 
 ## Features
 
 - User registration and authentication
-- Posting and viewing short messages (bleeps)
+- Posting and viewing short messages (bleeps) - LIKE tweets
 - Dark mode toggle
 - PostgreSQL database backend
 - Environment variable configuration for sensitive data
