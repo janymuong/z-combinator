@@ -51,6 +51,5 @@ Z-Combinator Twttr is a Django-based app for __`typing out thoughts`__. Authenti
 
 If you'd like to contribute to the project, feel free to submit issues or pull requests. Your contributions are welcome!
 
-
-## License
+---
 [MIT License](LICENSE).
