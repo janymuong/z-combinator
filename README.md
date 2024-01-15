@@ -5,25 +5,25 @@ Z-Combinator Twttr is a Django app for __`typing out thoughts`__. Authenticated 
 ## Setup
 
 1. **GIT:**
-   ```bash
-   git clone https://github.com/janymuong/z-combinator-twttr.git
+   ```shell
+   git clone https://github.com/janymuong/z-combinator.git
    cd z-combinator
    ```
 
 2. **Install Dependencies:**
-   ```bash
+   ```shell
    pip install -r requirements.txt
    ```
 
-3. **Set up Environment Variables:**
+3. **Set up Environment Variables:**  
    Create a `.env` file in the project root with the content:
    ```env
    DB_NAME=twttr_bleeps
    DB_USER=db_user # valid user
-   DB_PASSWORD=password-not-serious
+   DB_PASSWORD=passwd-not-serious
    DB_HOST=localhost
    DB_PORT=5432
-   SECRET_KEY=django-insecure#somes_lengthy_tring
+   SECRET_KEY=django-insecure#some_lengthy_tring
    ```
 
 4. **Apply Migrations:**
